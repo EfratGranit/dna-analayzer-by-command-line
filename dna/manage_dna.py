@@ -1,6 +1,7 @@
-from class_dna import DnaSequence
+from dna.class_dna import DnaSequence
 
 
+# A singleton class, manage the dna sequences
 class ManDna(object):
     __instance = None
 

@@ -1,4 +1,4 @@
-from config import allow
+from utils.config import allow
 
 
 # print error message

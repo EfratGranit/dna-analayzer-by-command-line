@@ -1,9 +1,9 @@
-from general_func import error
+from commands_classes.validate_com.specific_validations import val_del
 
 
 class CDelete:
     def run(self, words, dna):
-        if len(words) == 2 and words[1][0] == '#' and len(words[1]) > 1 and dna.get_by_id(int(words[1][1:])):
+        if val_del(dna, words):
             word = dna.get_by_id(int(words[1][1:]))
             print(f'Do you really want to delete {word["d_name"]}: {word["d_con"].get_seq()}?')
             print("Please confirm by 'y' or 'Y', or cancel by 'n' or 'N'.")
@@ -16,5 +16,3 @@ class CDelete:
                 print(f'Deleted: [{word["d_id"]}] {word["d_name"]}: {word["d_con"].get_seq()}')
             else:
                 print('Deleting canceled')
-        else:
-            error(', should get exist id as second operator')

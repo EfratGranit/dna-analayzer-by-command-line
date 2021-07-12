@@ -1,4 +1,4 @@
-from commands_classes.specific_validations import *
+from commands_classes.validate_com.specific_validations import *
 
 
 class ManValid:
@@ -12,8 +12,8 @@ class ManValid:
             "load": val_load,
             "dup": val_dup,
             "slice": val_slice,
-            # "del": CVDelete,
-            # "save": CVSave,
+            "del": val_del,
+            "save": val_save,
             "replace": val_replace,
             "len": val_len,
             "find": val_find,

@@ -1,5 +1,5 @@
-from general_func import find_name
-from manage_validations import ManValid
+from utils.general_func import find_name
+from commands_classes.validate_com.manage_validations import ManValid
 
 
 class CDup:

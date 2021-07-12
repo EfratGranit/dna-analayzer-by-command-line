@@ -1,6 +1,6 @@
-from general_func import error, find_name, allowed
-from general_validate import fix_con
-from manage_validations import ManValid
+from utils.general_func import find_name
+from commands_classes.validate_com.general_validate import fix_con
+from commands_classes.validate_com.manage_validations import ManValid
 
 
 class CReplace:

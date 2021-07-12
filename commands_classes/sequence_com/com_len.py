@@ -1,4 +1,4 @@
-from manage_validations import ManValid
+from commands_classes.validate_com.manage_validations import ManValid
 
 
 class CLen:

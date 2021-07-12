@@ -1,4 +1,4 @@
-from general_func import allowed
+from utils.general_func import allowed
 from commands_classes.batch.batch_db import BatchDB
 
 
@@ -28,6 +28,7 @@ def val_int(i, j, _id, dna):
     return False
 
 
+# change content to replaced one, if the entered indexes, values are valid, else - return none
 def fix_con(con, words):
     repl_i, repl_v = words[2::2], words[3::2]
     if all(i.isnumeric() for i in repl_i) and all(int(i) < len(con) for i in repl_i) and all(allowed(v) for v in repl_v):

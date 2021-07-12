@@ -1,6 +1,6 @@
 import re
-from general_validate import val_id
-from manage_validations import ManValid
+from commands_classes.validate_com.general_validate import val_id
+from commands_classes.validate_com.manage_validations import ManValid
 
 
 class CFindAll:

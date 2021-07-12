@@ -1,9 +1,9 @@
-from manage_validations import ManValid
+from commands_classes.validate_com.manage_validations import ManValid
 from commands_classes.batch.batch_db import BatchDB
-from config import ba_commands
-from general_func import error
-from command_interface import CommandRun, Invoker
-from manage_com_batch import ManCommandB
+from utils.config import ba_commands
+from utils.general_func import error
+from manage_all_commands.command_interface import CommandRun, Invoker
+from manage_all_commands.manage_com_batch import ManCommandB
 
 
 class CRun:

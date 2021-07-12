@@ -1,11 +1,10 @@
-from general_func import allowed, shorten_word
-from config import error_char
+from utils.general_func import allowed, shorten_word
+from utils.config import error_char
 
 
 class DnaSequence:
     def __init__(self, string):
         if not isinstance(string, str) or not allowed(string.strip()):
-            print(string)
             raise ValueError(error_char)
         self._string = string
 

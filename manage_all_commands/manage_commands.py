@@ -1,7 +1,7 @@
 from commands_classes.batch.com_create import CCreate
 from commands_classes.batch.com_run import CRun
 from commands_classes.batch.com_batchlist import CBatchList
-from manage_com_batch import ManCommandB
+from manage_all_commands.manage_com_batch import ManCommandB
 
 
 class ManCommand(ManCommandB):

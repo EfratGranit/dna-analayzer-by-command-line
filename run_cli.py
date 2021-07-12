@@ -1,8 +1,8 @@
-from command_interface import CommandRun, Invoker
-from manage_dna import ManDna
-from config import commands
-from general_func import error
-from manage_commands import ManCommand
+from manage_all_commands.command_interface import CommandRun, Invoker
+from dna.manage_dna import ManDna
+from utils.config import commands
+from utils.general_func import error
+from manage_all_commands.manage_commands import ManCommand
 
 
 if __name__ == '__main__':

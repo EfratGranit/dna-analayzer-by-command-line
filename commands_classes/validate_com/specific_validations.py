@@ -1,5 +1,5 @@
-from general_func import error, allowed
-from general_validate import val_id, val_manipulate, val_exist_empty_name, val_int, fix_con, find_name, val_not_exist_batch
+from utils.general_func import error, allowed
+from commands_classes.validate_com.general_validate import val_id, val_manipulate, val_exist_empty_name, val_int, fix_con, find_name, val_not_exist_batch
 
 
 def val_dup(dna, words):
@@ -109,3 +109,17 @@ def val_run(dna, words):
 
 def val_batch_list(dna, words):
     pass
+
+
+def val_del(dna, words):
+    if len(words) > 1 and val_id(words[1], dna):
+        return True
+    error(', should get exist id as second operator')
+    return False
+
+
+def val_save(dna, words):
+    if 1 < len(words) < 4 and words[1][0] == '@' and dna.get_by_name(words[1][1:]):
+        return True
+    error(', should get exist id with # before as second operator')
+    return False
