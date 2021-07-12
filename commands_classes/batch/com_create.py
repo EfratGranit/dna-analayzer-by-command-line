@@ -11,4 +11,4 @@ class CCreate:
             while cur_com != 'end':
                 b_content.append(cur_com)
                 cur_com = input('> batch >>>')
-            commands.add_new_batch(words[1], b_content)
+            commands.add_new_batch(words[1][1:], b_content)

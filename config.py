@@ -1,5 +1,5 @@
 error_char = 'expected only C A T G chars string'
-commands = ['new', 'load', 'dup', 'del', 'save', 'slice', 'replace', 'len', 'find', 'findall', 'batch', 'run',
-            'batchlist']
+ba_commands = ['new', 'load', 'dup', 'del', 'save', 'slice', 'replace', 'len', 'find', 'findall']
+commands = ba_commands + ['batch', 'run', 'batchlist']
 allow = ['C', 'A', 'G', 'T']
 ending = '.rawdna'

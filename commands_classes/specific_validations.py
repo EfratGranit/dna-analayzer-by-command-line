@@ -94,14 +94,14 @@ def val_replace(dna, words):
 
 
 def val_create_batch(dna, words):
-    if len(words) == 2 and val_not_exist_batch(words[1]):
+    if len(words) == 2 and words[1][0] == '@' and val_not_exist_batch(words[1][1:]):
         return True
     error(', batch name exist or empty')
     return False
 
 
 def val_run(dna, words):
-    if len(words) == 2 and not val_not_exist_batch(words[1]):
+    if len(words) == 2 and words[1][0] == '@' and not val_not_exist_batch(words[1][1:]):
         return True
     error(', batch name not exist or empty')
     return False
