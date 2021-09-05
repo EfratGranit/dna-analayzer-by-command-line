@@ -1,4 +1,6 @@
 # dna-analayzer-by-command-line
+## about
+dna analayzer is a system that loads, analyzes, manipulates and saves DNA sequences, using cli and design pattern principles. 
 ## author
 Efrat Granit
 ## general explanation about the design patterns I used
