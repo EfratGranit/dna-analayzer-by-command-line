@@ -1,6 +1,6 @@
 # dna-analayzer-by-command-line
 
-### general explanation about the design patterns I used
+## general explanation about the design patterns I used
 
 The main defines with the singleton design pattern an one instance class which manages the dna dictionary and contains get and set methods 
 Create the access to functions of command with factory design pattern – which get the name of function, after a validation check at the main, and returns suitable reference to class of the wanted method 
@@ -8,9 +8,9 @@ With reference to wanted method – the suitable for current command – we gonn
 About the batch command – I used the factory and the batch itself was a regular command with inner implementation similar to the main of cli
 
 
-### function expected input and output
+## function expected input and output
 
-# note: for all commands, if the input is invalid,  error message is printed, but cli never fall
+### note: for all commands, if the input is invalid,  error message is printed, but cli never fall
 
 ●[argument] - Words starting with "[", ending with "]" represent optional
 arguments.
