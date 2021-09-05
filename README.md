@@ -12,11 +12,11 @@ About the batch command – I used the factory and the batch itself was a regula
 
 ### note: for all commands, if the input is invalid,  error message is printed, but cli never fall
 
-●[argument] - Words starting with "[", ending with "]" represent optional
+</br>●[argument] - Words starting with "[", ending with "]" represent optional
 arguments.
-● <argument> - Words starting with "<", ending with ">" represent required
+</br>● <argument> - Words starting with "<", ending with ">" represent required
 arguments.
-● arg1|arg2 - Pipe sign ("|") between words represents that each one of them can
+</br>● arg1|arg2 - Pipe sign ("|") between words represents that each one of them can
 be used.
 
 "#my_id" means sequence with id number my_id
