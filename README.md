@@ -19,8 +19,8 @@ arguments.
 </br>● arg1|arg2 - Pipe sign ("|") between words represents that each one of them can
 be used.
 
-"#my_id" means sequence with id number my_id
-@short-seq refers to the sequence named short-seq
+</br>"#my_id" means sequence with id number my_id
+</br>@short-seq refers to the sequence named short-seq
 
 all of creation commands expects to get new name of sequence, else - prints error message and do nothing
 if default name is used - the command_manage will find name which doesnt exist and use it - should not fall at such a case
