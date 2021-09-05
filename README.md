@@ -1,5 +1,6 @@
 # dna-analayzer-by-command-line
-
+## author
+Efrat Granit
 ## general explanation about the design patterns I used
 
 The main defines with the singleton design pattern an one instance class which manages the dna dictionary and contains get and set methods 
@@ -7,23 +8,7 @@ Create the access to functions of command with factory design pattern – which 
 With reference to wanted method – the suitable for current command – we gonna define with command design pattern the activation of method.
 About the batch command – I used the factory and the batch itself was a regular command with inner implementation similar to the main of cli
 
-
-## function expected input and output
-
-### note: for all commands, if the input is invalid,  error message is printed, but cli never fall
-
-</br>●[argument] - Words starting with "[", ending with "]" represent optional
-arguments.
-</br>● <argument> - Words starting with "<", ending with ">" represent required
-arguments.
-</br>● arg1|arg2 - Pipe sign ("|") between words represents that each one of them can
-be used.
-
-</br>"#my_id" means sequence with id number my_id
-</br>@short-seq refers to the sequence named short-seq
-
-all of creation commands expects to get new name of sequence, else - prints error message and do nothing
-if default name is used - the command_manage will find name which doesnt exist and use it - should not fall at such a case
+# available commands running cli
 ## creation commands
 ### new 
 generate and save new dna sequence with given detailes
